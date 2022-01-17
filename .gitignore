@@ -1,0 +1,21 @@
+# files
+data_org
+Brainstorming
+document_template
+
+# data
+data/*.json
+
+# latex
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.synctex.gz
+*.synctex(busy)
+_minted_*
+
+#vscode
+*.vscode
