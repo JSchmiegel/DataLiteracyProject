@@ -18,5 +18,11 @@ data/data_pre
 *.synctex(busy)
 *_minted*
 
-#vscode
+# vscode
 *.vscode
+
+# python
+*__pycache__*
+
+# tmp
+*tmp*
