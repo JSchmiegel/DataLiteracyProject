@@ -17,12 +17,16 @@ data/data_pre
 *.synctex.gz
 *.synctex(busy)
 *_minted*
+*.bbl
+*.blg
+*.xdp-*
 
 # vscode
 *.vscode
 
 # python
 *__pycache__*
+*.ipynb_checkpoints
 
 # tmp
 *tmp*
