@@ -5,6 +5,7 @@ document_template
 
 # data
 data/*.json
+data/data_pre
 
 # latex
 *.aux
@@ -15,7 +16,7 @@ data/*.json
 *.pdf
 *.synctex.gz
 *.synctex(busy)
-_minted_*
+*_minted*
 
 #vscode
 *.vscode
