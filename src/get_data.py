@@ -18,5 +18,5 @@ def get_data(pre:boolean) -> pd.DataFrame:
         data = json.load(open(path))
         df_sclices.append(pd.DataFrame(data['playlists']))
 
-    df = pd.concat(df_sclices)
+    df = pd.concat(df_sclices, ignore_index=True)
     return df
