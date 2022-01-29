@@ -1,36 +1,38 @@
 \section{The dataset}
 
-As dataset for our project we are using the \textit{"The Million Playlist Dataset"} \citet{recsysChallenge} from Spotify (\url{https://research.atspotify.com/datasets/}). It consists of one million playlists (divided into 1000 JSON files, where each file consist 1000 playlists) and is about 34 GB in size. The dataset was sampled from over four billion public playlists on Spotify. It includes only playlists which were created between January 2010 and November 2017 by US Spotify users that are at least 13 years old. Originally the dataset was introduced as part of the \textit{RexSys Challenge 2018}. The Goal of the \textit{RexSys Challenge 2018} to create an algorithm suggest appropriate songs to add to a playlist.\footnote{Further information: \url{https://www.recsyschallenge.com/2018/}}
+As dataset for our project we are using the \textit{"The Million Playlist Dataset"} \citet{recsysChallenge} from Spotify (\url{https://research.atspotify.com/datasets/}). It consists of one million playlists (divided into 1000 JSON files, where each file consist of 1000 playlists) and is about 34 GB in size. The dataset was sampled from over four billion public playlists on Spotify. It includes only playlists which were created between January 2010 and November 2017 by US Spotify users, that are at least 13 years old. Originally the dataset was introduced as part of the \textit{RexSys Challenge 2018}. The Goal of the \textit{RexSys Challenge 2018} was to create an algorithm suggest appropriate songs to add to a playlist.\footnote{Further information: \url{https://www.recsyschallenge.com/2018/}}
 
-Add additional constraints the dataset hast (at least 5 tracks in playlist, contains no more than 250 tracks (see line 158 et seq. in the README))\answerTODO{}
+% TODO!!!!
+% Add additional constraints the dataset hast (at least 5 tracks in playlist, contains no more than 250 tracks (see line 158 et seq. in the README))
 
-An example of a playlist in the dataset\footnote{ten tracks are omitted to keep this example small}:
-\inputminted{json}{assets/example.json}
-% \begin{minted}[breaklines, breakanywhere,linenos, numbersep=5pt, gobble=0, frame=single]{json}
-% \end{minted}
+% # Ingnore because it's not necessary
+% An example of a playlist in the dataset\footnote{ten tracks are omitted to keep this example small}:
+% \inputminted{json}{assets/example.json}
+% % \begin{minted}[breaklines, breakanywhere,linenos, numbersep=5pt, gobble=0, frame=single]{json}
+% % \end{minted}
 
-The following list gives a detailed description of the \textit{"The Million Playlist Dataset"} (short MPD).
+% The following list gives a detailed description of the \textit{"The Million Playlist Dataset"} (short MPD).
 
-\begin{itemize}
-    \item \textbf{name}: Is the name of the playlist\footnote{There are no offensive titles in the dataset. In addition to this adult-oriented titles were excluded when the are created by a user under 18 years}
-    \item \textbf{pid}: Is an id (integer between 0 and 999,999) for the playlist in the MPD
-    \item \textbf{collaborative}: True if the playlist is a collaborative playlist, where multiple users may have added tracks to the playlist
-    \item \textbf{modified\_at}: Timestamps (in seconds since the epoch and rounded to midnight GMT of the date) when the playlist was modified
-    \item \textbf{num\_albums}: Number of unique albums for the tracks in the playlist
-    \item \textbf{num\_tracks}: Number of tracks in the playlist
-    \item \textbf{num\_followers}: Number of followers of the playlist\footnote{Not included is the playlist creator. Also is the number from the time, where the MPD was created.}
-    \item \textbf{num\_edits}: Number of separate editing sessions\footnote{Editing session are separated by a two-hour window in which no other track has been added.}
-    \item \textbf{duration\_ms}: The total duration of all the tracks in the playlist (in milliseconds)
-    \item \textbf{num\_artists}: Number of unique artist for thee tracks in the playlist
-    \item \textbf{tracks}: An array of infromation about all tracks in the playlist. Each entry has the following informations
-    \begin{itemize}
-        \item \textbf{pos}: Position of the track in the playlist\footnote{the first position is considert to be 0}
-        \item \textbf{artists\_name}: The name of the track's primary artist
-        \item \textbf{track\_uri}: The Spotify URI of the track
-        \item \textbf{artist\_uri}: The Spotify URI of the track's primary artist
-        \item \textbf{track\_name}: The name of the track
-        \item \textbf{album\_uri}: The Spotify URI of the album
-        \item \textbf{duration\_ms}: The duration of the track (in milliseconds)
-        \item \textbf{album\_name}: The name of the album
-    \end{itemize}
-\end{itemize}
+% \begin{itemize}
+%     \item \textbf{name}: Is the name of the playlist\footnote{There are no offensive titles in the dataset. In addition to this adult-oriented titles were excluded when the are created by a user under 18 years}
+%     \item \textbf{pid}: Is an id (integer between 0 and 999,999) for the playlist in the MPD
+%     \item \textbf{collaborative}: True if the playlist is a collaborative playlist, where multiple users may have added tracks to the playlist
+%     \item \textbf{modified\_at}: Timestamps (in seconds since the epoch and rounded to midnight GMT of the date) when the playlist was modified
+%     \item \textbf{num\_albums}: Number of unique albums for the tracks in the playlist
+%     \item \textbf{num\_tracks}: Number of tracks in the playlist
+%     \item \textbf{num\_followers}: Number of followers of the playlist\footnote{Not included is the playlist creator. Also is the number from the time, where the MPD was created.}
+%     \item \textbf{num\_edits}: Number of separate editing sessions\footnote{Editing session are separated by a two-hour window in which no other track has been added.}
+%     \item \textbf{duration\_ms}: The total duration of all the tracks in the playlist (in milliseconds)
+%     \item \textbf{num\_artists}: Number of unique artist for thee tracks in the playlist
+%     \item \textbf{tracks}: An array of infromation about all tracks in the playlist. Each entry has the following informations
+%     \begin{itemize}
+%         \item \textbf{pos}: Position of the track in the playlist\footnote{the first position is considert to be 0}
+%         \item \textbf{artists\_name}: The name of the track's primary artist
+%         \item \textbf{track\_uri}: The Spotify URI of the track
+%         \item \textbf{artist\_uri}: The Spotify URI of the track's primary artist
+%         \item \textbf{track\_name}: The name of the track
+%         \item \textbf{album\_uri}: The Spotify URI of the album
+%         \item \textbf{duration\_ms}: The duration of the track (in milliseconds)
+%         \item \textbf{album\_name}: The name of the album
+%     \end{itemize}
+% \end{itemize}

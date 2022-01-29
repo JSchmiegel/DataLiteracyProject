@@ -20,19 +20,7 @@
             "duration_ms": 166264,
             "album_name": "Dancing Chords and Fireflies"
         },
-        {
-            ... 
-        },
-        {
-            "pos": 11,
-            "artist_name": "Mo' Horizons",
-            "track_uri": "spotify:track:7iwx00eBzeSSSy6xfESyWN",
-            "artist_uri": "spotify:artist:3tuX54dqgS8LsGUvNzgrpP",
-            "track_name": "Fever 99\u00b0",
-            "album_uri": "spotify:album:2Fg1t2tyOSGWkVYHlFfXVf",
-            "duration_ms": 364320,
-            "album_name": "Come Touch The Sun"
-        }
+        ... 
     ],
 
 }
