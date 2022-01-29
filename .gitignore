@@ -13,7 +13,7 @@ data/data_pre
 *.fls
 *.log
 *.out
-*.pdf
+main.pdf
 *.synctex.gz
 *.synctex(busy)
 *_minted*
@@ -30,3 +30,8 @@ data/data_pre
 
 # tmp
 *tmp*
+
+#figures
+*.jpg
+*.png
+*.jpeg
