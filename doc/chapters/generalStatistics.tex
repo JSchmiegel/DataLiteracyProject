@@ -24,11 +24,27 @@ The average duration of a playlist is \var{converted_average_duration}. This fit
 
 To get the most popular tracks, albums and artists, we counted how often they were occurring in a playlist. The result ca be seen in figure \ref{fig:popular}. The top 15 tracks are expectedly matching with the first 15 billboard charts of 2017 \cite{BillboardMedia}.
 
-\begin{figure}[ht]
+\begin{table}[]
     \centering
-    \includegraphics[width=0.3\textwidth]{fig/TopTracks.png}
-    \includegraphics[width=0.3\textwidth]{fig/TopAlbums.png}
-    \includegraphics[width=0.3\textwidth]{fig/TopPopularArtits.png}
     \caption{CAPTION}
-    \label{fig:popular}
-\end{figure}
+    \begin{tabular}{clllllllll} \toprule
+    Pos & Occur.               & Track                 & Occur.               & Album                 & Occur.                & Artist                 \\
+    \midrule
+    1   & \var{top1track_occ}  & \var{top1track_name}  & \var{top1album_occ}  & \var{top1album_name}  & \var{top1artist_occ}  & \var{top1artist_name}  \\
+    2   & \var{top2track_occ}  & \var{top2track_name}  & \var{top2album_occ}  & \var{top2album_name}  & \var{top2artist_occ}  & \var{top2artist_name}  \\
+    3   & \var{top3track_occ}  & \var{top3track_name}  & \var{top3album_occ}  & \var{top3album_name}  & \var{top3artist_occ}  & \var{top3artist_name}  \\
+    4   & \var{top4track_occ}  & \var{top4track_name}  & \var{top4album_occ}  & \var{top4album_name}  & \var{top4artist_occ}  & \var{top4artist_name}  \\
+    5   & \var{top5track_occ}  & \var{top5track_name}  & \var{top5album_occ}  & \var{top5album_name}  & \var{top5artist_occ}  & \var{top5artist_name}  \\
+    6   & \var{top6track_occ}  & \var{top6track_name}  & \var{top6album_occ}  & \var{top6album_name}  & \var{top6artist_occ}  & \var{top6artist_name}  \\
+    7   & \var{top7track_occ}  & \var{top7track_name}  & \var{top7album_occ}  & \var{top7album_name}  & \var{top7artist_occ}  & \var{top7artist_name}  \\
+    8   & \var{top8track_occ}  & \var{top8track_name}  & \var{top8album_occ}  & \var{top8album_name}  & \var{top8artist_occ}  & \var{top8artist_name}  \\
+    9   & \var{top9track_occ}  & \var{top9track_name}  & \var{top9album_occ}  & \var{top9album_name}  & \var{top9artist_occ}  & \var{top9artist_name}  \\
+    10  & \var{top10track_occ} & \var{top10track_name} & \var{top10album_occ} & \var{top10album_name} & \var{top10artist_occ} & \var{top10artist_name} \\
+    11  & \var{top11track_occ} & \var{top11track_name} & \var{top11album_occ} & \var{top11album_name} & \var{top11artist_occ} & \var{top11artist_name} \\
+    12  & \var{top12track_occ} & \var{top12track_name} & \var{top12album_occ} & \var{top12album_name} & \var{top12artist_occ} & \var{top12artist_name} \\
+    13  & \var{top13track_occ} & \var{top13track_name} & \var{top13album_occ} & \var{top13album_name} & \var{top13artist_occ} & \var{top13artist_name} \\
+    14  & \var{top14track_occ} & \var{top14track_name} & \var{top14album_occ} & \var{top14album_name} & \var{top14artist_occ} & \var{top14artist_name} \\
+    15  & \var{top15track_occ} & \var{top15track_name} & \var{top15album_occ} & \var{top15album_name} & \var{top15artist_occ} & \var{top15artist_name} \\
+    \bottomrule
+    \end{tabular}
+\end{table}

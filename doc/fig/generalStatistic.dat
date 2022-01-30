@@ -11,8 +11,96 @@ converted_average_duration;4:20:59.351561
 average_track_duration;234,498.661
 converted_average_track_duration;0:03:54.498661
 average_numtracks;66.778
-cal_average_track_duration;234,498.661
-converted_cal_average_track_duration;0:03:54.498661
+approx_average_numtracks;67
 cal_average_playlist_duration;15,659,351.561
 converted_cal_average_playlist_duration;4:20:59.351561
-approx_average_numtracks;67
+top1track_occ;4441
+top1track_name;HUMBLE.
+top1album_occ;15378
+top1album_name;Stoney
+top1artist_occ;82428
+top1artist_name;Drake
+top2track_occ;4240
+top2track_name;One Dance
+top2album_occ;13710
+top2album_name;DAMN.
+top2artist_occ;40856
+top2artist_name;Kanye West
+top3track_occ;4145
+top3track_name;Closer
+top3album_occ;13081
+top3album_name;Coloring Book
+top3artist_occ;34555
+top3artist_name;Kendrick Lamar
+top4track_occ;4073
+top4track_name;Broccoli (feat. Lil Ya...
+top4album_occ;12045
+top4album_name;American Teen
+top4artist_occ;33348
+top4artist_name;Rihanna
+top5track_occ;3936
+top5track_name;Congratulations
+top5album_occ;11851
+top5album_name;Culture
+top5artist_occ;31147
+top5artist_name;The Weeknd
+top6track_occ;3523
+top6track_name;Caroline
+top6album_occ;11448
+top6album_name;Beauty Behind The Madness
+top6artist_occ;28438
+top6artist_name;Eminem
+top7track_occ;3476
+top7track_name;iSpy (feat. Lil Yachty)
+top7album_occ;11418
+top7album_name;More Life
+top7artist_occ;27467
+top7artist_name;Ed Sheeran
+top8track_occ;3456
+top8track_name;XO TOUR Llif3
+top8album_occ;11219
+top8album_name;The Life Of Pablo
+top8artist_occ;24972
+top8artist_name;Future
+top9track_occ;3439
+top9track_name;Location
+top9album_occ;11198
+top9album_name;Purpose
+top9artist_occ;24075
+top9artist_name;J. Cole
+top10track_occ;3385
+top10track_name;Bad and Boujee (feat. ...
+top10album_occ;11113
+top10album_name;Views
+top10artist_occ;23625
+top10artist_name;Justin Bieber
+top11track_occ;3221
+top11track_name;No Role Modelz
+top11album_occ;10824
+top11album_name;2014 Forest Hills Drive
+top11artist_occ;23296
+top11artist_name;Beyoncé
+top12track_occ;3202
+top12track_name;Ignition - Remix
+top12album_occ;10465
+top12album_name;Blurryface
+top12artist_occ;22191
+top12artist_name;The Chainsmokers
+top13track_occ;3190
+top13track_name;Bounce Back
+top13album_occ;10126
+top13album_name;÷
+top13artist_occ;20798
+top13artist_name;Chris Brown
+top14track_occ;3136
+top14track_name;Mask Off
+top14album_occ;9902
+top14album_name;x
+top14artist_occ;20595
+top14artist_name;Luke Bryan
+top15track_occ;3111
+top15track_name;No Problem (feat. Lil ...
+top15album_occ;9844
+top15album_name;Montevallo
+top15artist_occ;19848
+top15artist_name;Calvin Harris
