@@ -1,0 +1,18 @@
+SizeDataset;100,000
+total_tracks;6,677,800
+unique_tracks;681,805
+ratio;9.794
+artists_unique;110,063
+albums_unique;271,413
+total_duration;1,565,935,156,055
+average_duration;15,659,351.561
+converted_total_duration;18124 days, 5:59:16.055000
+converted_average_duration;4:20:59.351561
+average_track_duration;234,498.661
+converted_average_track_duration;0:03:54.498661
+average_numtracks;66.778
+cal_average_track_duration;234,498.661
+converted_cal_average_track_duration;0:03:54.498661
+cal_average_playlist_duration;15,659,351.561
+converted_cal_average_playlist_duration;4:20:59.351561
+approx_average_numtracks;67

@@ -28,16 +28,16 @@
 \usepackage{xcolor}         % colors
 
 \usepackage{graphicx}
-\usepackage{minted}
-\setminted{
-    fontsize=\footnotesize,
-    breaklines,
-    breakanywhere,
-    linenos,
-    numbersep=5pt,
-    gobble=0,
-    frame=single
-}
+% package to open file containing variables
+\usepackage{datatool, filecontents}
+\DTLsetseparator{;}% Set the separator between the columns.
+
+% import data
+\DTLloaddb[noheader, keys={thekey,thevalue}]{generalStatistic}{fig/generalStatistic.dat}
+% Loads mydata.dat with column headers 'thekey' and 'thevalue'
+% \newcommand{\var}[1]{\texttt{\DTLfetch{generalStatistic}{thekey}{#1}{thevalue}}}
+\newcommand{\var}[1]{\DTLfetch{generalStatistic}{thekey}{#1}{thevalue}}
+
 
 \title{Predicting Acceptance Probabilities\\ from Trivial Features}
 
@@ -72,8 +72,9 @@
 \input{chapters/introduction.tex}
 \input{chapters/dataset.tex}
 \input{chapters/generalStatistics.tex}
+\input{chapters/popularVsUnpopular.tex}
 
-% \bibliography{bibliography}
-\bibliography{sample}
+\bibliography{bibliography}
+% \bibliography{sample}
 
 \end{document}
