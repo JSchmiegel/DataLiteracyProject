@@ -39,7 +39,7 @@
 \newcommand{\var}[1]{\DTLfetch{generalStatistic}{thekey}{#1}{thevalue}}
 
 
-\title{Predicting Acceptance Probabilities\\ from Trivial Features}
+\title{A descriptive view on\\ Spotify playlists}
 
 % The \author macro works with any number of authors. There are two commands
 % used to separate the names and addresses of multiple authors: \And and \AND.
@@ -64,9 +64,8 @@
 \maketitle
 
 \begin{abstract}
-  We are planning to use the "The Million Playlist Dataset" from Spotify (\url{https://research.atspotify.com/datasets/}). The dataset is downloadable under the following link (\url{https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge}). You can find a sample of the datastructure below.
-  We are aiming to answer questions about Spotify playlist, like e.g.: What is the average playlist length? What would the average playlist look like (what tracks would you find)? Which distribution fits best when looking at follower numbers of the playlists (hypothesis: la place distribution)? 
-  We mainly focus on plotting and analyzing the dataset but are also aiming to use logistic/linear regression (e.g. to find a "border" between popular and non-popular tracks). As mentioned we try to find fitting distribution for the data (e.g. follower numbers of playlists)
+  The aim of this paper is to get an intuition of how Spotify playlists are created and used. We take a look at different key data of playlists e.g. tracks, artists and followers. To cover a wide range of topics we chose a descriptive statistics view. Starting with some general stats, we calculated averages of interesting metrics and show the how unique values behave when considering more data. Then we compared popular and unpopular playlists and found differences in the number of unique artists but also in the amount of users that give a description of their playlist.
+  
 \end{abstract}
 
 \input{chapters/introduction.tex}

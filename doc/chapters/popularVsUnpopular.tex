@@ -1,2 +1,22 @@
 \section{Popular vs. Unpopular Playlists}
-A good indicator for the popularity of a playlist is the number of follower. So we scattered all playlist with the follower to get a feeling, if there is a "vacuum" between very popular playlists (over x follower) and unpopular playlists. Through the scatter ...
+To analyze the difference between popular and unpopular playlists we first had to establish a measurement from which we can identify a playlist as (un)popular. As previously described we have calculated the most common tracks. We determined an arbitrary but reasonable border, which is to contain at least three of the top 50 common tracks to count as a popular playlist. To obtain the same group sizes, we sampled from the larger one. We then looked for differences between the groups and found that playlists with popular tracks have less unique artists than playlists with unpopular tracks. 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{doc/fig/pop_unpop_artist.pdf}
+    \caption{Histogram of Number of Artists with fitted Beta function for popular and unpopular playlists}
+    \label{fig:averagetrack}
+\end{figure}
+
+To show this we plotted the number of artists against its occurrence for both groups. Just by looking at the mode we can see that there is a difference but to further underlie our finding we fitted a beta function to the data. The input values of a beta function are between 0 and 1. Since the playlists in the dataset are constrained to have at least three but no more than 250 artists, also the data has limits on both sides. The probability density of both beta functions is shifted to the lower border. We can see that the beta function of unpopular playlists has nearly all of its mass around the mode, while the mass of the beta function of popular playlists is much more spread.
+
+We also thought of another metric that can measure the popularity, which is the number of followers of a playlist. The playlists are constrained to have at least one follower and more than 90\% of the playlist have three or less. This is why we decided to not split the data into the binary groups, popular and unpopular. Nevertheless we found that the more follower a playlist has, the more likely it is for the playlist to have a description.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{doc/fig/followers_to_description.pdf}
+    \caption{Bar plot of number of followers to relative amount with description}
+    \label{fig:averagetrack}
+\end{figure}
+
+We grouped the playlists by their follower number and counted the ones that have been given a description. Because the groups heavily differ in size, we calculated the relative amount. As mentioned the data pool for playlists with higher follower numbers gets very small, we put all playlists with more than ten followers into one group.
