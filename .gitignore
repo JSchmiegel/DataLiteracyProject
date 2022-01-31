@@ -35,3 +35,6 @@ main.pdf
 *.jpg
 *.png
 *.jpeg
+
+#mac
+*.DS_Store

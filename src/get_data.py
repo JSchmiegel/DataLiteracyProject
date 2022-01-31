@@ -1,5 +1,4 @@
 from xmlrpc.client import boolean
-import numpy as np
 import pandas as pd
 
 import json
@@ -12,11 +11,11 @@ def get_data(pre:boolean) -> pd.DataFrame:
         data_path = 'data'
     
     pathlist = Path(data_path).glob('**/*.json')
-    df_sclices = []
+    df_slices = []
 
     for path in pathlist:
         data = json.load(open(path))
-        df_sclices.append(pd.DataFrame(data['playlists']))
+        df_slices.append(pd.DataFrame(data['playlists']))
 
-    df = pd.concat(df_sclices, ignore_index=True)
+    df = pd.concat(df_slices, ignore_index=True)
     return df
