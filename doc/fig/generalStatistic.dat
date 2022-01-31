@@ -6,14 +6,14 @@ artists_unique;110,063
 albums_unique;271,413
 total_duration;1,565,935,156,055
 average_duration;15,659,351.561
-converted_total_duration;18124 days, 5:59:16.055000
-converted_average_duration;4:20:59.351561
+converted_total_duration;18124 days 5:59:16
+converted_average_duration;4:20:59
 average_track_duration;234,498.661
-converted_average_track_duration;0:03:54.498661
+converted_average_track_duration;0: 3:54
 average_numtracks;66.778
 approx_average_numtracks;67
 cal_average_playlist_duration;15,659,351.561
-converted_cal_average_playlist_duration;4:20:59.351561
+converted_cal_average_playlist_duration;4:20:59
 top1track_occ;4441
 top1track_name;HUMBLE.
 top1album_occ;15378
