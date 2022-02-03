@@ -12,14 +12,16 @@ The average number of tracks in one playlist are $\approx$ \var{approx_average_n
 
 The average duration of a playlist is \var{converted_average_duration}. This fits (approximately) with the fact, that a track has an average duration of \var{converted_average_track_duration}.\footnote{Using the following calculation:\\$\text{average duration of track [ms]}\cdot\text{average number of tracks in a playlist}=\var{average_track_duration} \text{ ms}\cdot\var{average_numtracks}= \var{cal_average_playlist_duration} \text{ ms} = $ \var{converted_cal_average_playlist_duration}}
 
+Knowing the average number of tracks per playlist, we wanted to know how much any new playlist contributes to this. For that we looked how the number of unique tracks changes when considering more playlists and plotted the results. To clearly show the relation we changed the x-axis to a square root scale.
+
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{fig/unique_to_playlist.pdf}
-    \caption{CAPTION}
+    \caption{Line plot showing the relation between e.g unique tracks and considered playlists}
     \label{fig:unique_to_playlist}
 \end{figure}
-\answerTODO{} TEXT for cumsum graphs
 
+We now know that the first $n$ playlists contribute the same amount of unique tracks as the $n^2$ playlist after. The same holds for artists and albums.
 
 
 To get the most popular tracks, albums and artists, we counted how often they were occurring in a playlist. The result ca be seen in figure \ref{fig:popular}. The top 15 tracks are expectedly matching with the first 15 billboard charts of 2017 \citet{BillboardMedia}.
