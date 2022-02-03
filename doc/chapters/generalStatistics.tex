@@ -1,18 +1,7 @@
 \section{General Statistics}
-To get a broad overview of the dataset we decided to make some general numerical analysis of the dataset to get a feeling for Spotify playlists as data and the scope of the dataset. In the part of the dataset that we are analyzing there are \var{SizeDataset} playlists\footnote{Originally there are 1 million playlists. Due to limited processing power we had to reduce our analysis to a dataset of \var{SizeDataset} playlists.} with a total number of \var{unique_tracks} unique tracks by \var{artists_unique} artists in \var{albums_unique} albums. The total length of all playlist is \var{converted_total_duration} (hrs.:min.:sec.).
+To get a broad overview of the dataset we decided to make some general numerical analysis of the dataset. In the part of the dataset, that we are analyzing there are \var{SizeDataset} playlists\footnote{Originally there are 1 million playlists. Due to limited processing power we had to reduce our analysis to a dataset of \var{SizeDataset} playlists.} with a total number of \var{unique_tracks} unique tracks by \var{artists_unique} artists in \var{albums_unique} albums. The total length of all playlist is \var{converted_total_duration} (hrs.:min.:sec.). The average number of tracks in one playlist is $\approx$ \var{approx_average_numtracks}\footnote{The exact number are \var{average_numtracks} tracks} tracks. The average duration of a playlist is \var{converted_average_duration}. This fits with the fact, that a track has an average duration of \var{converted_average_track_duration}.\footnote{Using the following calculation:\\$\text{average duration of track [ms]}\cdot\text{average number of tracks in a playlist}=\var{average_track_duration} \text{ ms}\cdot\var{average_numtracks}= \var{cal_average_playlist_duration} \text{ ms} = $ \var{converted_cal_average_playlist_duration}}
 
-The average number of tracks in one playlist are $\approx$ \var{approx_average_numtracks}\footnote{The exact number are \var{average_numtracks} tracks} tracks. Figure \ref{fig:averagetrack} shows how the average number of tracks per playlists changes, when more and more playlists are considered. 
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=\textwidth]{fig/averageTrack.pdf}
-    \caption{Change of the average number of tracks in a playlist over consideration of all playlists}
-    \label{fig:averagetrack}
-\end{figure}
-
-The average duration of a playlist is \var{converted_average_duration}. This fits (approximately) with the fact, that a track has an average duration of \var{converted_average_track_duration} (hrs.:min.:sec.).\footnote{Using the following calculation:\\$\text{average duration of track [ms]}\cdot\text{average number of tracks in a playlist}=\var{average_track_duration} \text{ ms}\cdot\var{average_numtracks}= \var{cal_average_playlist_duration} \text{ ms} = $ \var{converted_cal_average_playlist_duration}}
-
-Knowing the average number of tracks per playlist, we wanted to know how much any new playlist contributes to this. For that we looked how the number of unique tracks changes when considering more playlists and plotted the results. To clearly show the relation we changed the x-axis to a square root scale.
+Knowing that the average number of tracks per playlist is \var{approx_average_numtracks}, we wanted to know how much these contribute to the total amount of unique tracks. For that we looked how the number of unique tracks changes when considering more playlists and plotted the results. To clearly show the relation we changed the x-axis to a square root scale.
 
 \begin{figure}[ht]
     \centering
@@ -21,14 +10,14 @@ Knowing the average number of tracks per playlist, we wanted to know how much an
     \label{fig:unique_to_playlist}
 \end{figure}
 
-We now know that the first $n$ playlists contribute the same amount of unique tracks as the $n^2$ playlist after. The same holds for artists and albums.
+We now know that the first $n$ playlists contribute the same amount of unique tracks as the $n^2$ playlists after. The same holds for artists and albums.% This derives from the relationship between artists, album and tracks.
 
-
-To get the most popular tracks, albums and artists, we counted how often they were occurring in a playlist. The result is shown in tab. \ref{tab:popular}. When we compare this top 15 with the top 15 of the "Year-end Charts Hot 100 Songs 2017" by billboard there is an overlap, of about $15 \%$.\footnote{The songs "Humble", "Closer", "Bad and Boujee", "Congratulations", "XO TOUR Llif3" and "Mask Off" are in both top lists.}\citep{BillboardMedia}
+To see what is mainstream we got the most popular tracks, albums and artists and counted how often they were occurring in a playlist. The result is shown in tab. \ref{tab:popular}. When we compare this top 15 tracks with the top 15 of the "Year-end Charts Hot 100 Songs 2017" by billboard there is an overlap, of about $40 \%$.\footnote{The songs "Humble", "Closer", "Bad and Boujee", "Congratulations", "XO TOUR Llif3" and "Mask Off" are in both top lists.}\citep{BillboardMedia} This is remarkable because the dataset is from January 2010 until November 2017 whereas the billboard top list is only resembling the year 2017.
 
 \begin{table}[]
     \centering
     \caption{Top 15 Popular Tracks, Albums and Artists}
+    \resizebox{\textwidth}{!}{%
     \begin{tabular}{clllllllll} \toprule
     Pos. & Occur.               & Track                 & Occur.               & Album                 & Occur.                & Artist                 \\
     \midrule
@@ -48,6 +37,6 @@ To get the most popular tracks, albums and artists, we counted how often they we
     14  & \var{top14track_occ} & \var{top14track_name} & \var{top14album_occ} & \var{top14album_name} & \var{top14artist_occ} & \var{top14artist_name} \\
     15  & \var{top15track_occ} & \var{top15track_name} & \var{top15album_occ} & \var{top15album_name} & \var{top15artist_occ} & \var{top15artist_name} \\
     \bottomrule
-    \end{tabular}
+    \end{tabular}}
     \label{tab:popular}
 \end{table}
