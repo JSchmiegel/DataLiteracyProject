@@ -6,5 +6,5 @@ def convert_ms(ms:float) -> str:
     hours, rest = divmod(duration.seconds, (60*60))
     min, sec = divmod(rest, 60)
     if duration.days <= 0:
-        return f'{hours:}:{min:2d}:{sec:2d}'
-    return f'{duration.days} days {hours:}:{min:2d}:{sec:2d}'
+        return f'{hours:}:{min:02d}:{sec:02d}'
+    return f'{duration.days} days {hours:}:{min:02d}:{sec:02d}'
