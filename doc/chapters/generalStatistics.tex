@@ -6,11 +6,11 @@ The average number of tracks in one playlist are $\approx$ \var{approx_average_n
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{fig/averageTrack.pdf}
-    \caption{CAPTION}
+    \caption{Change of the average number of tracks in a playlist over consideration of all playlists}
     \label{fig:averagetrack}
 \end{figure}
 
-The average duration of a playlist is \var{converted_average_duration}. This fits (approximately) with the fact, that a track has an average duration of \var{converted_average_track_duration}.\footnote{Using the following calculation:\\$\text{average duration of track [ms]}\cdot\text{average number of tracks in a playlist}=\var{average_track_duration} \text{ ms}\cdot\var{average_numtracks}= \var{cal_average_playlist_duration} \text{ ms} = $ \var{converted_cal_average_playlist_duration}}
+The average duration of a playlist is \var{converted_average_duration}. This fits (approximately) with the fact, that a track has an average duration of \var{converted_average_track_duration} (hrs.:min.:sec.).\footnote{Using the following calculation:\\$\text{average duration of track [ms]}\cdot\text{average number of tracks in a playlist}=\var{average_track_duration} \text{ ms}\cdot\var{average_numtracks}= \var{cal_average_playlist_duration} \text{ ms} = $ \var{converted_cal_average_playlist_duration}}
 
 Knowing the average number of tracks per playlist, we wanted to know how much any new playlist contributes to this. For that we looked how the number of unique tracks changes when considering more playlists and plotted the results. To clearly show the relation we changed the x-axis to a square root scale.
 
@@ -28,7 +28,7 @@ To get the most popular tracks, albums and artists, we counted how often they we
 
 \begin{table}[]
     \centering
-    \caption{CAPTION}
+    \caption{Top 15 Popular Tracks, Albums and Artists}
     \begin{tabular}{clllllllll} \toprule
     Pos. & Occur.               & Track                 & Occur.               & Album                 & Occur.                & Artist                 \\
     \midrule
