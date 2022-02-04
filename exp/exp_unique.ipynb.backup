@@ -169,15 +169,15 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": 15,
    "metadata": {},
    "outputs": [
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "CPU times: user 44 ms, sys: 4.68 ms, total: 48.7 ms\n",
-      "Wall time: 53.2 ms\n"
+      "CPU times: user 43.7 ms, sys: 4.89 ms, total: 48.6 ms\n",
+      "Wall time: 53.3 ms\n"
      ]
     }
    ],
@@ -262,7 +262,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": 17,
    "metadata": {
     "scrolled": false
    },
@@ -310,7 +310,7 @@
     "axs[2].axline([0, -5000], [len(vals_album), vals_album.values[-1][0]], alpha=0.4, color='#191414',linestyle='--')\n",
     "\n",
     "plt.subplots_adjust(wspace=0.28)\n",
-    "plt.savefig('doc/fig/unique_to_playlist.pdf', bbox_inches=\"tight\")\n",
+    "plt.savefig('unique_to_playlist.pdf', bbox_inches=\"tight\")\n",
     "plt.show()"
    ]
   },

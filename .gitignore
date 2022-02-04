@@ -6,6 +6,7 @@ document_template
 # data
 data/*.json
 data/data_pre
+data/csv_data
 
 # latex
 *.aux
